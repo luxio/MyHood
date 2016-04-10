@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D509825E1CB950EA007D0416 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D509825D1CB950EA007D0416 /* DataService.swift */; };
 		D5649EE11CB410220070CBCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5649EE01CB410220070CBCF /* AppDelegate.swift */; };
 		D5649EE31CB410220070CBCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5649EE21CB410220070CBCF /* ViewController.swift */; };
 		D5649EE61CB410220070CBCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5649EE41CB410220070CBCF /* Main.storyboard */; };
 		D5649EE81CB410220070CBCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5649EE71CB410220070CBCF /* Assets.xcassets */; };
 		D5649EEB1CB410220070CBCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5649EE91CB410220070CBCF /* LaunchScreen.storyboard */; };
+		D5649EF41CB410790070CBCF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5649EF31CB410790070CBCF /* Post.swift */; };
+		D5649EF91CB41B450070CBCF /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5649EF81CB41B450070CBCF /* PostCell.swift */; };
+		D56699241CB944F200B32357 /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56699231CB944F200B32357 /* AddPostVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D5649EDD1CB410220070CBCF /* my-hood-luxio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-hood-luxio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D509825D1CB950EA007D0416 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		D5649EDD1CB410220070CBCF /* MyHood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5649EE01CB410220070CBCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5649EE21CB410220070CBCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D5649EE51CB410220070CBCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5649EE71CB410220070CBCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5649EEA1CB410220070CBCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5649EEC1CB410220070CBCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5649EF31CB410790070CBCF /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		D5649EF81CB41B450070CBCF /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		D56699231CB944F200B32357 /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D509825C1CB950CF007D0416 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D509825D1CB950EA007D0416 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		D5649ED41CB410220070CBCF = {
 			isa = PBXGroup;
 			children = (
@@ -46,7 +62,7 @@
 		D5649EDE1CB410220070CBCF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D5649EDD1CB410220070CBCF /* my-hood-luxio.app */,
+				D5649EDD1CB410220070CBCF /* MyHood.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,9 +70,11 @@
 		D5649EDF1CB410220070CBCF /* my-hood-luxio */ = {
 			isa = PBXGroup;
 			children = (
+				D509825C1CB950CF007D0416 /* Services */,
+				D56699221CB944BA00B32357 /* Controller */,
+				D5649EF51CB41AE00070CBCF /* View */,
+				D5649EF21CB410660070CBCF /* Model */,
 				D5649EE01CB410220070CBCF /* AppDelegate.swift */,
-				D5649EE21CB410220070CBCF /* ViewController.swift */,
-				D5649EE41CB410220070CBCF /* Main.storyboard */,
 				D5649EE71CB410220070CBCF /* Assets.xcassets */,
 				D5649EE91CB410220070CBCF /* LaunchScreen.storyboard */,
 				D5649EEC1CB410220070CBCF /* Info.plist */,
@@ -64,12 +82,38 @@
 			path = "my-hood-luxio";
 			sourceTree = "<group>";
 		};
+		D5649EF21CB410660070CBCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D5649EF31CB410790070CBCF /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D5649EF51CB41AE00070CBCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D5649EE41CB410220070CBCF /* Main.storyboard */,
+				D5649EF81CB41B450070CBCF /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D56699221CB944BA00B32357 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D5649EE21CB410220070CBCF /* ViewController.swift */,
+				D56699231CB944F200B32357 /* AddPostVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D5649EDC1CB410220070CBCF /* my-hood-luxio */ = {
+		D5649EDC1CB410220070CBCF /* MyHood */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5649EEF1CB410220070CBCF /* Build configuration list for PBXNativeTarget "my-hood-luxio" */;
+			buildConfigurationList = D5649EEF1CB410220070CBCF /* Build configuration list for PBXNativeTarget "MyHood" */;
 			buildPhases = (
 				D5649ED91CB410220070CBCF /* Sources */,
 				D5649EDA1CB410220070CBCF /* Frameworks */,
@@ -79,9 +123,9 @@
 			);
 			dependencies = (
 			);
-			name = "my-hood-luxio";
+			name = MyHood;
 			productName = "my-hood-luxio";
-			productReference = D5649EDD1CB410220070CBCF /* my-hood-luxio.app */;
+			productReference = D5649EDD1CB410220070CBCF /* MyHood.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +143,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D5649ED81CB410220070CBCF /* Build configuration list for PBXProject "my-hood-luxio" */;
+			buildConfigurationList = D5649ED81CB410220070CBCF /* Build configuration list for PBXProject "MyHood" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -112,7 +156,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D5649EDC1CB410220070CBCF /* my-hood-luxio */,
+				D5649EDC1CB410220070CBCF /* MyHood */,
 			);
 		};
 /* End PBXProject section */
@@ -135,8 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5649EF41CB410790070CBCF /* Post.swift in Sources */,
 				D5649EE31CB410220070CBCF /* ViewController.swift in Sources */,
+				D56699241CB944F200B32357 /* AddPostVC.swift in Sources */,
+				D509825E1CB950EA007D0416 /* DataService.swift in Sources */,
 				D5649EE11CB410220070CBCF /* AppDelegate.swift in Sources */,
+				D5649EF91CB41B450070CBCF /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +302,7 @@
 				INFOPLIST_FILE = "my-hood-luxio/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.lux.my-hood-luxio";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MyHood;
 			};
 			name = Debug;
 		};
@@ -265,14 +313,14 @@
 				INFOPLIST_FILE = "my-hood-luxio/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.lux.my-hood-luxio";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MyHood;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D5649ED81CB410220070CBCF /* Build configuration list for PBXProject "my-hood-luxio" */ = {
+		D5649ED81CB410220070CBCF /* Build configuration list for PBXProject "MyHood" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D5649EED1CB410220070CBCF /* Debug */,
@@ -281,13 +329,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D5649EEF1CB410220070CBCF /* Build configuration list for PBXNativeTarget "my-hood-luxio" */ = {
+		D5649EEF1CB410220070CBCF /* Build configuration list for PBXNativeTarget "MyHood" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D5649EF01CB410220070CBCF /* Debug */,
 				D5649EF11CB410220070CBCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
