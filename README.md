@@ -1,5 +1,5 @@
 # MyHood
 
-Simmple Swift App saving Arrays in `NSUserDefaults`
+Simple Swift App saving Arrays in `NSUserDefaults`
 
 ![Screenshot](screenshot.png)
